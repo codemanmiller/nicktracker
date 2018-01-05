@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+
+function changeImage()
+{
+var img = document.getElementById("image");
+img.src="afe_golf.png";
+return false;
+}
+
+</script>
+
 </head>
 	<body>
 		<span>
@@ -13,11 +24,11 @@
 		<span>
 			<div>
 				<p>Map of American Fire - Click the button to locate Nick</p>
-				<button type = "button" class = 'btn btn-primary'>Find Nick</button>
+				<button id="clickme" onclick="changeImage()"; class='btn btn-primary';>Find Nick</button>
 
 			</div>
 
-			<img src="afe_building.png" >
+			<img id ="image" src="afe_building.png" >
 
 		</span>
 	</body>
